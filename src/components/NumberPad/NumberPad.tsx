@@ -1,5 +1,5 @@
-import { NumberPadButton } from './NumberPadStyles';
-import { NumberPadProps } from './NumberPadType';
+import { NumberPadButton } from './NumberPad.styles';
+import { NumberPadProps } from './NumberPad.type';
 
 const NumberPad = (props: NumberPadProps) => {
 	const { number } = props;

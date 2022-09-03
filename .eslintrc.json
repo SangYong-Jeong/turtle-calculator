@@ -27,6 +27,9 @@
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "react/jsx-props-no-spreading": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-console": "off",
+    "consistent-return": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {

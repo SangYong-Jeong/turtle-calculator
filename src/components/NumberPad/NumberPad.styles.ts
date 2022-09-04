@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { Color } from '../../styles/Color';
 
 export const NumberPadButton = styled.div`
-	background-color: ${Color.Color_white};
-	color: ${Color.Color_light_black};
-	border: 1px solid ${Color.Color_gray};
+	background-color: ${(props) => (props.theme.button ? props.theme.button.backgroundColor : Color.Color_white)};
+	color: ${(props) => (props.theme.button ? props.theme.button.color : Color.Color_light_black)};
+	border: 1px solid;
+	border-color: ${(props) => (props.theme.button ? props.theme.button.borderColor : props.theme.borderColor)};
 	display: flex;
 	justify-content: center;
 	align-items: center;

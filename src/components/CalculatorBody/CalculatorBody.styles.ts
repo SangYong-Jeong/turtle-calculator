@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import { Color } from '../../styles/Color';
-import { CalculatorBodyProps } from './CalculatorBody.type';
 
-export const CalculatorBodyWrap = styled.div<CalculatorBodyProps>`
+export const CalculatorBodyWrap = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -11,8 +9,10 @@ export const CalculatorBodyWrap = styled.div<CalculatorBodyProps>`
 	padding: 10px;
 	width: 100%;
 	height: 100%;
-	border: 3px solid #ebebeb;
+	border: 3px solid;
 	border-radius: 10px;
+	border-color: ${(props) => props.theme.borderColor};
+	background-color: ${(props) => props.theme.backgorundColor};
 `;
 
 export default {

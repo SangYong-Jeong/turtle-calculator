@@ -1,4 +1,4 @@
-type CalculatorBodyColors = 'white' | 'black' | 'mint' | 'blue';
+export type CalculatorBodyColors = 'white' | 'black' | 'mint' | 'sky-blue';
 
 export interface CalculatorBodyProps {
 	color: CalculatorBodyColors;

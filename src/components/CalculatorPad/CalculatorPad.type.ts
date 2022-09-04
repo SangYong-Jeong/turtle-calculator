@@ -1,3 +1,3 @@
 export interface NumberPadProps {
-	number: number;
+	number: number | string;
 }

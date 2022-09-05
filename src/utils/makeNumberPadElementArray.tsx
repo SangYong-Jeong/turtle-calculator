@@ -1,11 +1,16 @@
 import CalculatorPad from 'components/CalculatorPad/CalculatorPad';
-import { numberPadsLength } from 'lib/constants';
+import { numberPadsLength, changePlusMinus, dot } from 'lib/constants';
 
 export const makeNumberPadElementArray = () => {
 	const numberPadElementArray: JSX.Element[] = [];
 	for (let number = 1; number <= numberPadsLength; number++) {
-		numberPadElementArray.push(<CalculatorPad number={number} />);
+		numberPadElementArray.push(<CalculatorPad numberOrSymbol={number} />);
 	}
+
+	const changePlusMinusPad = <CalculatorPad numberOrSymbol={changePlusMinus} />;
+	const zeroNumberPad = <CalculatorPad numberOrSymbol={0} />;
+	const dotPad = <CalculatorPad numberOrSymbol={dot} />;
+	numberPadElementArray.push(changePlusMinusPad, zeroNumberPad, dotPad);
 
 	return numberPadElementArray;
 };

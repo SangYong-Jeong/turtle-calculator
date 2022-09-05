@@ -1,3 +1,5 @@
-export interface NumberPadProps {
-	number: number | string;
+import { MathSign } from 'lib/constants';
+
+export interface CalculatorPadProps {
+	numberOrSymbol: number | typeof MathSign[keyof typeof MathSign];
 }

@@ -1,6 +1,12 @@
 // numberPad의 길이 1 ~ 9
 export const numberPadsLength = 9;
 
+// 수학 기호들 모음 enum
+export const MathSign = {
+	changePlusMinus: '+/-',
+	dot: '.',
+} as const;
+
 // 수학 기호들 모음
 export const changePlusMinus = '+/-';
 export const dot = '.';

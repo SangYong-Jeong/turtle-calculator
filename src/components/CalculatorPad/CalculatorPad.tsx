@@ -1,9 +1,9 @@
-import { NumberPadButton } from './CalculatorPad.styles';
-import { NumberPadProps } from './CalculatorPad.type';
+import { CalculatorPadButton } from './CalculatorPad.styles';
+import { CalculatorPadProps } from './CalculatorPad.type';
 
-const NumberPad = (props: NumberPadProps) => {
-	const { number } = props;
-	return <NumberPadButton>{number}</NumberPadButton>;
+const CalculatorPad = (props: CalculatorPadProps) => {
+	const { numberOrSymbol } = props;
+	return <CalculatorPadButton>{numberOrSymbol}</CalculatorPadButton>;
 };
 
-export default NumberPad;
+export default CalculatorPad;

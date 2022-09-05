@@ -1,5 +1,5 @@
 import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { CalculatorBodyColors } from 'components/CalculatorBody/CalculatorBody.type';
+import { CalculatorNumberColors } from 'components/CalculatorNumber/CalculatorNumber.type';
 import {
 	themeCalculatorBodyWhite,
 	themeCalculatorBodyBlack,
@@ -7,7 +7,7 @@ import {
 	themeCalculatorBodySkyBlue,
 } from 'styles/Theme';
 
-export const getCalculatorThemeProvider = (color: CalculatorBodyColors) => {
+export const getCalculatorThemeProvider = (color: CalculatorNumberColors) => {
 	let theme: DefaultTheme = {};
 
 	switch (color) {

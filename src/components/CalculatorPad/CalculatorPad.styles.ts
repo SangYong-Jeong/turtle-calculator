@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Color } from '../../styles/Color';
 
-export const NumberPadButton = styled.div`
+export const CalculatorPadButton = styled.div`
 	background-color: ${(props) => (props.theme.button ? props.theme.button.backgroundColor : Color.Color_white)};
 	color: ${(props) => (props.theme.button ? props.theme.button.color : Color.Color_light_black)};
 	border: 1px solid;
@@ -17,5 +17,5 @@ export const NumberPadButton = styled.div`
 `;
 
 export default {
-	NumberPadButton,
+	CalculatorPadButton,
 };

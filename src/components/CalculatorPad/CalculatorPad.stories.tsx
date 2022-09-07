@@ -11,4 +11,4 @@ export default {
 const Template: ComponentStory<typeof CalculatorPad> = (args) => <CalculatorPad {...args} />;
 
 export const CalculatorPadOne = Template.bind({});
-CalculatorPadOne.args = { number: 1 };
+CalculatorPadOne.args = { numberOrSymbol: 1 };

@@ -1,5 +1,5 @@
 import CalculatorPad from 'components/CalculatorPad/CalculatorPad';
-import { numberPadsLength, changePlusMinus, dot } from 'lib/constants';
+import { numberPadsLength, MathSign } from 'lib/constants';
 
 export const makeNumberPadElementArray = () => {
 	const numberPadElementArray: JSX.Element[] = [];
@@ -7,6 +7,8 @@ export const makeNumberPadElementArray = () => {
 		numberPadElementArray.push(<CalculatorPad numberOrSymbol={number} />);
 	}
 
+	// 숫자패드 아래에 추가적으로 들어가는 '+/-' , '0', '.'
+	const { changePlusMinus, dot } = MathSign;
 	const changePlusMinusPad = <CalculatorPad numberOrSymbol={changePlusMinus} />;
 	const zeroNumberPad = <CalculatorPad numberOrSymbol={0} />;
 	const dotPad = <CalculatorPad numberOrSymbol={dot} />;

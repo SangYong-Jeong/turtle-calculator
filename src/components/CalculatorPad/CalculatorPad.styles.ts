@@ -11,9 +11,9 @@ export const CalculatorPadButton = styled.div`
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.125em, rgba(90, 125, 188, 0.05) 0px 0.125em 0.5em;
 	font-family: 'Righteous', cursive;
-	font-size: 1rem;
+	font-size: 1.5rem;
 `;
 
 export default {

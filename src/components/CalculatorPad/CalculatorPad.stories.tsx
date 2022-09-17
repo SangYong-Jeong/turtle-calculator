@@ -1,4 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { MATH_SIGN, CALCULATOR_PAD_NUMBER } from 'lib/constants';
 import CalculatorPad from './CalculatorPad';
 
 export default {
@@ -11,4 +12,10 @@ export default {
 const Template: ComponentStory<typeof CalculatorPad> = (args) => <CalculatorPad {...args} />;
 
 export const CalculatorPadOne = Template.bind({});
-CalculatorPadOne.args = { numberOrSymbol: 1 };
+CalculatorPadOne.args = { numberOrSymbol: CALCULATOR_PAD_NUMBER.one };
+
+export const CalculatorPadPlus = Template.bind({});
+CalculatorPadPlus.args = { numberOrSymbol: MATH_SIGN.plus };
+
+export const CalculatorPadEquality = Template.bind({});
+CalculatorPadEquality.args = { numberOrSymbol: MATH_SIGN.equality };

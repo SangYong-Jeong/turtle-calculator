@@ -1,8 +1,14 @@
 import styled from 'styled-components';
+import { makeCalculatorPadBackgroundColor } from 'utils/makeCalculatorPadBackgroundColor';
 import { Color } from '../../styles/Color';
+import { CalculatorPadProps } from './CalculatorPad.type';
 
-export const CalculatorPadButton = styled.div`
-	background-color: ${(props) => (props.theme.button ? props.theme.button.backgroundColor : Color.Color_white)};
+export const CalculatorPadButton = styled.div<CalculatorPadProps>`
+	background-color: ${(props) => {
+		const { numberOrSymbol } = props;
+		const backgorundColor = makeCalculatorPadBackgroundColor(numberOrSymbol);
+		return backgorundColor;
+	}};
 	color: ${(props) => (props.theme.button ? props.theme.button.color : Color.Color_light_black)};
 	border: 1px solid;
 	border-color: ${(props) => (props.theme.button ? props.theme.button.borderColor : props.theme.borderColor)};

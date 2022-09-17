@@ -1,7 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import CalculatorPadList from 'components/CalculatorPadList/CalculatorPadList';
-// 한 번에 렌더링 할 수 있게끔 배열 세팅 예정
+import { MATH_SIGN, CALCULATOR_PAD_NUMBER } from 'lib/constants';
 
 describe('<CalculatorPadList />', () => {
-	it('renders CalculatorPadList with number and sign of math', () => {});
+	// CalculatorPadList 렌더링 잘 되는지?
+	it('renders CalculatorPadList with number and sign of math', () => {
+		render(<CalculatorPadList />);
+		screen.getByText(CALCULATOR_PAD_NUMBER.one);
+		screen.getByText(MATH_SIGN.plus);
+	});
 });

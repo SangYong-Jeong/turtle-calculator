@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const CalculatorBodyWrap = styled.div`
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 	row-gap: 6px;
 	column-gap: 6px;
 	padding: 10px;

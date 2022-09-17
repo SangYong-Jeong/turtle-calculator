@@ -12,7 +12,7 @@ export const MATH_SIGN = {
 	squareRootOfX: '√x',
 	clear: 'C',
 	clearEntity: 'CE',
-	delete: 'D', // 특정 구분자 정해야 한다. 컴포넌트 안에서 렌더링 할 꺼니까
+	delete: 'DELETE', // 특정 구분자 정해야 한다. 컴포넌트 안에서 렌더링 할 꺼니까
 	percent: '%',
 } as const;
 
@@ -30,13 +30,11 @@ export const CALCULATOR_PAD_NUMBER = {
 };
 
 // 수학 기호들 모음
-
-// delete 는 아이콘 사용 예정 -> react-icons ( 우선 구분자 필요할 듯 안에서 렌더링 하면 되니까 )
-
 export const ARRAY_CALCULATOR_PAD_ORDER = [
 	MATH_SIGN.percent,
 	MATH_SIGN.clearEntity,
 	MATH_SIGN.clear,
+	MATH_SIGN.delete,
 	MATH_SIGN.oneOverX,
 	MATH_SIGN.xSquared,
 	MATH_SIGN.squareRootOfX,

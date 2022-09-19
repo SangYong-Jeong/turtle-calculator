@@ -16,6 +16,7 @@ export const MATH_SIGN = {
 	percent: '%',
 } as const;
 
+// 계산기 패드에 들어갈 숫자
 export const CALCULATOR_PAD_NUMBER = {
 	zero: 0,
 	one: 1,
@@ -29,7 +30,17 @@ export const CALCULATOR_PAD_NUMBER = {
 	nine: 9,
 };
 
-// 수학 기호들 모음
+// 메모리 버튼 기호 표시
+export const MEMORY_PAD_SIGN = {
+	plus: 'M+',
+	minus: 'M-',
+	clear: 'MC',
+	recall: 'MR',
+	save: 'MS',
+	list: 'M▾',
+} as const;
+
+// CalculatorPadList 에 순서대로 들어갈 배열
 export const ARRAY_CALCULATOR_PAD_ORDER = [
 	MATH_SIGN.percent,
 	MATH_SIGN.clearEntity,
@@ -57,8 +68,18 @@ export const ARRAY_CALCULATOR_PAD_ORDER = [
 	MATH_SIGN.equality,
 ];
 
+export const ARRAY_MEMORY_PAD_ORDER = [
+	MEMORY_PAD_SIGN.clear,
+	MEMORY_PAD_SIGN.recall,
+	MEMORY_PAD_SIGN.plus,
+	MEMORY_PAD_SIGN.minus,
+	MEMORY_PAD_SIGN.list,
+];
+
 export default {
 	MATH_SIGN,
 	CALCULATOR_PAD_NUMBER,
+	MEMORY_PAD_SIGN,
 	ARRAY_CALCULATOR_PAD_ORDER,
+	ARRAY_MEMORY_PAD_ORDER,
 };

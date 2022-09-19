@@ -1,4 +1,4 @@
-import { getCalculatorThemeProvider } from 'utils/CalculatorBodyThemeProvider';
+import { getCalculatorThemeProvider } from 'provider/CalculatorBodyThemeProvider';
 import { CalculatorBodyProps } from './CalculatorBody.types';
 import { CalculatorBodyWrap } from './CalculatorBody.styles';
 

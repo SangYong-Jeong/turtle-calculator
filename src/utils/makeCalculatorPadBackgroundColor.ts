@@ -16,7 +16,7 @@ export const makeCalculatorPadBackgroundColor = (numberOrSymbol: NumberOrSymbol)
 	} else if (isEqual) {
 		backgroundColor = Color.Color_pale_blue;
 	} else {
-		backgroundColor = Color.Color_gray_blue;
+		backgroundColor = Color.Color_mystic;
 	}
 
 	return backgroundColor;

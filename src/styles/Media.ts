@@ -1,27 +1,5 @@
 import { css, CSSObject, SimpleInterpolation } from 'styled-components';
-
-const deviceSizes = {
-	phones: {
-		condition: 'min-width',
-		size: '600px',
-	},
-	portraitTablets: {
-		condition: 'max-width',
-		size: '600px',
-	},
-	landscapeTablets: {
-		condition: 'max-width',
-		size: '768px',
-	},
-	laptops: {
-		condition: 'max-width',
-		size: '992px',
-	},
-	desktops: {
-		condition: 'max-width',
-		size: '1200px',
-	},
-} as const;
+import { deviceSizes } from './MediaType';
 
 export const makeMediaQuery = Object.entries(deviceSizes).reduce(
 	(acc, [deviceLabel, deviceSize]) => ({
